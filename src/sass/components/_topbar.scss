@@ -1,0 +1,45 @@
+.topbar-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid $main-color;
+}
+
+.topbar {
+  height: 100%;
+    
+    div {
+      padding: 0 15px;
+
+    a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.topbar svg {
+  height: 15px;
+}
+
+.topbar .col-md-auto {
+  border-left: 1px solid $main-color;
+  height: 100%;
+}
+
+.wallet span, .profile span {
+  margin: 15px;
+}
+
+.wallet {
+  font-size: 19px;
+  color: $paragraph-color;
+}
+
+.profile {
+  font-size: 14px;
+}

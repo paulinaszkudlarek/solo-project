@@ -1,0 +1,25 @@
+.subpage-wrapper {
+  background-color: lighten($main-color, 8%);
+}
+
+.subpage {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 1px $main-color;
+}
+
+.subpage-title-wrapper {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $main-color;
+  border-bottom: 1px solid $main-color;
+  
+  h3 {
+    margin: 7px;
+    font-family: $brand-font;
+  }
+}
+
+.form-date {
+  display: flex;
+  justify-content: center;
+}

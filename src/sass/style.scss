@@ -1,4 +1,12 @@
 @import "variables";
 @import "mixins";
+@import "global";
 @import "normalize";
 @import "layout";
+
+@import "components/navigation";
+@import "components/subpage";
+@import "components/top-bar";
+@import "components/calendar";
+
+@import "pages/general";

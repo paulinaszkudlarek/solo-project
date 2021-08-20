@@ -1,6 +1,6 @@
-
 .sidebar {
   background-color: $main-dark-color;
+  padding: 0;
 
   a {
     color: $main-light-color;
@@ -20,7 +20,7 @@
   padding: 0;
 
   li {
-    padding-left: 0;
+    padding: 0;
   }
 
   a {
@@ -42,6 +42,7 @@
     &:hover {
       filter: brightness(100%);
       border-left: 5px solid $brand-main-color;
+      background-color: lighten($main-dark-color, 10%);
     }
   }
 }

@@ -1,0 +1,33 @@
+.form-date-wrapper {
+  border-bottom: 1px solid $paragraph-color;
+}
+
+.form-date {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  
+  .form-field {
+    border-style: none;
+    margin: 0px 0px 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:first-of-type {
+      border-right: 1px solid $paragraph-color;
+    }
+  }
+
+  svg {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: 15px;
+    width: 25px;
+    margin: auto; 
+  }
+}
+
+.form-field-wrapper {
+  border: 1px solid $paragraph-color;
+  border-radius: 2px;
+}

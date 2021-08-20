@@ -4,9 +4,11 @@
 @import "normalize";
 @import "layout";
 
-@import "components/navigation";
-@import "components/subpage";
-@import "components/topbar";
-@import "components/calendar";
+@import "sections/navigation";
+@import "sections/subpage";
+@import "sections/topbar";
+@import "sections/calendar";
 
 @import "pages/general";
+
+@import "components/button";

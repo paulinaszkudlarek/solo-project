@@ -8,18 +8,14 @@
 }
 
 .subpage-title-wrapper {
-  font-size: 15px;
-  text-transform: uppercase;
-  color: $main-color;
   border-bottom: 1px solid $main-color;
   
   h3 {
     margin: 7px;
-    font-family: $brand-font;
+    font-family: $paragraph-font;
+    color: $paragraph-color;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
   }
-}
-
-.form-date {
-  display: flex;
-  justify-content: center;
 }

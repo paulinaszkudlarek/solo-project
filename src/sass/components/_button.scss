@@ -1,0 +1,10 @@
+button {
+  border-style: none;
+  background-color: $brand-main-color;
+  border-radius: 3px;
+  margin: -1px 0px -1px 15px;
+  
+  svg {
+    fill: $main-light-color;
+  }
+}

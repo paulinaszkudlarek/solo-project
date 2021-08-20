@@ -22,8 +22,17 @@
   }
 }
 
-.topbar svg {
-  height: 15px;
+.topbar {
+  
+  svg {
+  height: 18px;
+  width: 18px;
+  fill: $paragraph-color;
+  }
+
+  span {
+    margin: 15px;
+  }
 }
 
 .topbar .col-md-auto {
@@ -31,15 +40,18 @@
   height: 100%;
 }
 
-.wallet span, .profile span {
-  margin: 15px;
-}
-
-.wallet {
+.wallet span {
   font-size: 19px;
+  font-weight: 400;
   color: $paragraph-color;
+
+  svg:last-of-type {
+    height: 12px;
+    width: 12px;
+  }
 }
 
-.profile {
+.profile span{
   font-size: 14px;
+  color: $link-color;
 }

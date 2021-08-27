@@ -3,9 +3,10 @@
 @import "global";
 @import "normalize";
 @import "layout";
+@import "../vendor/css/Glyphter.css";
 
 @import "sections/navigation";
-@import "sections/subpage";
+@import "sections/page";
 @import "sections/topbar";
 @import "sections/calendar";
 

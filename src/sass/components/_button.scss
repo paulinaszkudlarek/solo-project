@@ -4,7 +4,8 @@ button {
   border-radius: 3px;
   margin: -1px 0px -1px 15px;
   
-  svg {
-    fill: $main-light-color;
+  [class*="icon-"] {
+    color: $main-light-color;
+    font-size: 13px;
   }
 }

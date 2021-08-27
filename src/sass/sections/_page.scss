@@ -1,13 +1,16 @@
-.subpage-wrapper {
+.page-wrapper {
   background-color: lighten($main-color, 8%);
+  top: 50px;
+  left: 15%;
+  width: 85%;
 }
 
-.subpage {
+.page {
   background-color: #fff;
   box-shadow: 0px 0px 5px 1px $main-color;
 }
 
-.subpage-title-wrapper {
+.page-title-wrapper {
   border-bottom: 1px solid $main-color;
   
   h3 {
@@ -18,4 +21,18 @@
     font-size: 14px;
     text-transform: uppercase;
   }
+}
+
+
+@media screen and (max-width: 768px) {
+  .page-wrapper {
+    left: 0;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .page-wrapper {
+    left: 20%;
+  }
+
 }

@@ -1,0 +1,27 @@
+.legend-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  // height: 35px;
+  justify-content: center;
+  align-items: center;
+
+  .map-legend-name {
+    margin-right: 10px;
+  }
+
+  [class*='map-legend-'] {
+    height: 30px;
+    max-width: fit-content;
+    margin: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $main-color;
+      border-radius: 4px;
+    }
+  }
+}

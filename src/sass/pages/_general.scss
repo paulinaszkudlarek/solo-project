@@ -3,19 +3,59 @@
   margin: 15px auto;
 }
 
-// .statistic-data {
-//   div {
-//     height: 30px;
-//     display: inline-block;
-//     justify-content: space-between;
-//     align-items: center;
-//     border-bottom: 1px solid $main-color;
-//     padding: 0;
-//   }
-// }
-
 .general-column-wrapper {
   display: block;
   margin: 0px 30px;
   width: 250px;
+}
+
+.statistic-data-row {
+  display: block;
+}
+
+.statistic-data-item {
+  border-bottom: 1px solid $paragraph-color;
+  display: flex;
+  justify-content: space-between;
+  margin: 22px auto;
+  padding: 4px 0px;
+}
+
+.legend-wrapper {
+  flex-wrap: wrap;
+
+  .circle-signups {
+    background-color: lightskyblue;
+  }
+
+  .circle-ftd {
+    background-color: $brand-main-color;
+  }
+
+  .circle-earned {
+    background-color: limegreen;
+  }
+}
+
+.chart-wrapper {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .legend-wrapper {
+    display: flex;
+    justify-content: left;
+
+    .legend-wrapper [class*='map-legend-'] {
+      justify-content: left;
+      margin: 0;
+      height: 30px;
+
+      [class*='circle-'] {
+        margin-left: 0;
+      }
+    }
+  }
 }

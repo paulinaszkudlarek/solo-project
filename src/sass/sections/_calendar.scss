@@ -6,11 +6,16 @@
   display: flex;
   justify-content: center;
   margin: 30px 0;
-  
+  flex-wrap: nowrap;
+
   .form-field {
     border-style: none;
-    margin: 0px 0px 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100%;
+    min-width: 150px;
+    padding: 0;
+    cursor: pointer;
 
     &:first-of-type {
       border-right: 1px solid $paragraph-color;
@@ -30,4 +35,38 @@
 .form-field-wrapper {
   border: 1px solid $paragraph-color;
   border-radius: 2px;
+  display: flex;
+}
+
+
+@media screen and (max-width:767px) {
+  .form-date {
+    display: block;
+    
+    button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  .form-field-wrapper {
+    display: block;
+    justify-content: space-between;
+
+    .form-field {
+      display: block;
+      height: 40px;
+    }
+
+    .form-field:first-of-type {
+      border-right: none;
+      border-bottom: 1px solid $paragraph-color;
+    }
+  }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+  .form-date {
+    width: 70%;
+  }
 }

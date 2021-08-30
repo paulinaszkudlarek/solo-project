@@ -5,11 +5,19 @@
 @import "layout";
 @import "../vendor/css/Glyphter.css";
 
+// Components
+@import "components/button";
+@import "components/circle";
+@import "components/map-legend";
+@import "components/nav-link";
+@import "components/statistic-line";
+
+// Sections
 @import "sections/navigation";
 @import "sections/page";
 @import "sections/topbar";
 @import "sections/calendar";
 
+// Pages  
 @import "pages/general";
 
-@import "components/button";

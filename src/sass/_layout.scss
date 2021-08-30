@@ -34,3 +34,10 @@ nav {
 .page {
   margin: 15px;
 }
+
+
+@media screen and (min-width:576px) {
+  .container {
+    max-width: 100%;
+  }
+}

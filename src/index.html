@@ -98,7 +98,7 @@
                   </a>
                 </div>
                 <div class="col-md-auto">
-                  <a href="#">
+                  <a href="#">1
                     <span class="icon-notification"></span>
                   </a>
                 </div>
@@ -109,7 +109,7 @@
                   </a>
                 </div>
                 <div class="col-md-auto">
-                  <a href="#">
+                  <a href="#">1
                     <span class="icon-quit"></span>
                   </a>
                 </div>
@@ -127,10 +127,10 @@
                 </div>
                 <div class="row">
                   <div class="col form-date-wrapper">
-                    <form class="form-date">
-                      <div class="form-field-wrapper">
-                        <input class="form-field" type="date" value="2020-12-12">
-                        <input class="form-field" type="date" value="2020-12-12">
+                    <form class="row form-date">
+                      <div class="col-md-8 form-field-wrapper">
+                        <input class="col-md-6 form-field" type="date" value="2020-12-12">
+                        <input class="col-md-6 form-field" type="date" value="2020-12-12">
                       </div>
                       <button type="submit">
                         <span class="icon-refresh"></span>
@@ -139,52 +139,54 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col statistic-wrapper">
-                    <div class="row statistic-data">
+                  <div class="col">
+                    <div class="row">
                       <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-sm">
+                        <div class="row statistic-data-row">
+                          <div class="col statistic-data-item">
                             <span>Visit Signups</span>
                             <span>124</span>
                           </div>
-                          <div class="col-sm">
+                          <div class="col statistic-data-item">
                             <span>FTD</span>
                             <span>445</span>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-sm">
+                        <div class="row statistic-data-row">
+                          <div class="col statistic-data-item">
                             <span>Net deposit</span>
                             <span>124</span>
                           </div>
-                          <div class="col-sm">
+                          <div class="col statistic-data-item">
                             <span>Turn ovet</span>
                             <span>445</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row legend-wrapper">
-                      <div class="col">
+                    <div class="row">
+                      <div class="col legend-wrapper">
                         <div class="map-legend-1">
-                          <div class="circle"></div>
-                          <span>Signups</span>
+                          <div class="circle-signups"></div>
+                          <span class="map-legend-name">Signups</span>
                         </div>
                         <div class="map-legend-2">
-                          <div class="circle"></div>
-                          <span>FTD</span>
+                          <div class="circle-ftd"></div>
+                          <span class="map-legend-name">FTD</span>
                         </div>
                         <div class="map-legend-3">
-                          <div class="circle"></div>
-                          <span>Earned</span>
+                          <div class="circle-earned"></div>
+                          <span class="map-legend-name">Earned</span>
                         </div>
                       </div>
                     </div>
-                    <div class="row img-wrapper">
-                      <img src="images/wykres.JPG" alt="chart">
-                      <!--  docelowo użyć <canvas></canvas> i napisać wykres w JS -->
+                    <div class="row">
+                      <div class="col chart-wrapper">
+                        <img src="images/wykres.JPG" alt="chart">
+                        <!--  docelowo użyć <canvas></canvas> i napisać wykres w JS -->
+                      </div>
                     </div>
                   </div>
                 </div>

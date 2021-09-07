@@ -39,8 +39,27 @@
   }
 
   .nav-active {
+    background-color: $main-dark-color;
+
     .nav-links-wrapper {
       display: block;
+      padding-bottom: 10px;
+      
+      .icon-wrapper {
+        flex: 2;
+        max-width: none;
+      }
+
+      [class*="icon-"] {
+        justify-content: flex-end;
+        margin-right: 10px;
+        font-size: 17px;
+      }
+
+      .tittle-nav-link-wrapper {
+        flex: 3;
+        max-width: none;
+      }
     } 
   }
 }

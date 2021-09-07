@@ -1,7 +1,11 @@
+.pages-main-wrapper {
+  flex-direction: column;
+}
+
 .page-wrapper {
   top: 50px;
   left: 15%;
-  width: 85%;
+  width: 100%;
 }
 
 .page {

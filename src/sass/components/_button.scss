@@ -1,15 +1,20 @@
 button {
   border-style: none;
   background-color: $brand-main-color;
+  color: $main-light-color;
   border-radius: 3px;
   margin: -1px 0px -1px 15px;
   height: 30px;
-  width: 30px;
+  width: fit-content;
   cursor: pointer;
   
   [class*="icon-"] {
     color: $main-light-color;
     font-size: 13px;
+  }
+
+  &:hover {
+    background-color: darken($brand-main-color, 9%);
   }
 }
 

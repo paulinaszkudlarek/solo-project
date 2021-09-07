@@ -1,0 +1,29 @@
+.html-link-line {
+  border-bottom: 1px solid $paragraph-color;
+}
+
+.link-wrapper {
+  display: flex;
+  align-items: center;
+
+  div:first-of-type {
+    flex: 3;
+  }
+
+  .link-html {
+    flex: 6;
+    overflow: hidden;
+  }
+
+  .icons-wrapper {
+    display: flex;
+    flex: 1;
+  }
+}
+
+[class*='icon-'] {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}

@@ -33,7 +33,7 @@
   }
 }
 
-.topbar .col-md-auto {
+.topbar-item-wrapper {
   border-left: 1px solid $main-color;
   height: 100%;
 }
@@ -58,5 +58,34 @@
 @media screen and (max-width:767px) {
   .topbar-wrapper {
     display: none;
+  }
+
+  .topbar-active {
+    display: flex;
+    top: 319px;
+    padding: 0;
+    height: auto;
+
+    .topbar {
+      display: block;
+      background: $main-dark-color;
+      width: 260px;
+      height: fit-content;
+
+      .topbar-item-wrapper {
+        border-style: none;
+        padding: 0;
+      }
+
+      .profile {
+        .icon-profile {
+          flex: 1;
+        }
+
+        span{
+          flex: 3;
+        }
+      }
+    }
   } 
 }

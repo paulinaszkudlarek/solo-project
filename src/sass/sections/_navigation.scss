@@ -39,14 +39,20 @@
   }
 
   .nav-active {
-    background-color: $main-dark-color;
+    .logo-wrapper {
+      margin-bottom: 6px;
+    }
 
     .nav-links-wrapper {
       display: block;
       padding-bottom: 10px;
-      
+      background: $main-dark-color;
+      width: 260px;
+      float: right;
+      margin: 0;
+
       .icon-wrapper {
-        flex: 2;
+        flex: 1;
         max-width: none;
       }
 
@@ -59,6 +65,10 @@
       .tittle-nav-link-wrapper {
         flex: 3;
         max-width: none;
+        flex: 3;
+        max-width: none;
+        font-size: 19px;
+        font-weight: 100;
       }
     } 
   }

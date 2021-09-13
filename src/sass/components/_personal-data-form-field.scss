@@ -1,0 +1,35 @@
+.personal-data-form-field {
+  display: flex;
+  max-width: 50%;
+  margin: 20px auto;
+  max-width: 50%;
+  align-items: center;
+
+  label {
+    flex: 2;
+  }
+
+  input {
+    flex: 6;
+    height: 35px;
+    padding: 0;
+    border-radius: 3px;
+    border: 1px solid $main-color;
+    color: $paragraph-color;
+    padding: 0 10px;
+
+    &:hover {
+      border: 2px solid $main-color;
+    }
+
+    &:focus {
+      border: 2px solid $paragraph-color;
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+  .personal-data-form-field {
+    max-width: none;
+  }
+}

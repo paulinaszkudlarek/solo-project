@@ -1,12 +1,19 @@
+.button-wrapper {
+  justify-content: center;
+  display: flex;
+  margin: 15px;
+}
+
 button {
   border-style: none;
   background-color: $brand-main-color;
   color: $main-light-color;
   border-radius: 3px;
-  margin: -1px 0px -1px 15px;
-  height: 30px;
+  padding: 10px 20px;
+  height: auto;
   width: fit-content;
   cursor: pointer;
+  font-weight: 100;
   
   [class*="icon-"] {
     color: $main-light-color;

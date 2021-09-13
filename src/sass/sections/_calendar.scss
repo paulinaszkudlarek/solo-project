@@ -1,5 +1,5 @@
 .form-date-wrapper {
-  border-bottom: 1px solid $paragraph-color;
+  border-bottom: 1px solid $main-color;
 }
 
 .form-date {
@@ -16,6 +16,8 @@
     min-width: 150px;
     padding: 0;
     cursor: pointer;
+    color: $paragraph-color;
+    font-weight: 700;
 
     &:first-of-type {
       border-right: 1px solid $paragraph-color;

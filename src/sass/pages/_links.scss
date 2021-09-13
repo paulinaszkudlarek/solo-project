@@ -1,0 +1,23 @@
+.links-page {
+  .button-wrapper {
+    margin: 15px;
+  
+    button {
+      height: 35px;
+    }
+  }
+
+  .links-wrapper {
+    justify-content: center;
+
+    .html-link-line {
+      color: $paragraph-color;
+      padding: 0;
+      border-bottom: 1px solid $main-color;
+
+      &:first-of-type {
+        border-top: 1px solid $main-color;
+      }
+    }
+  }
+}

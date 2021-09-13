@@ -13,7 +13,7 @@
       padding-left: 10px;
     }
 
-    &:hover {
+    &:hover, &:focus {
       filter: brightness(100%);
       border-left: 5px solid $brand-main-color;
       background-color: lighten($main-dark-color, 10%);
@@ -27,7 +27,7 @@
     font-weight: 100;
 
     li {
-      margin: 10px 0;
+      padding: 5px 0;
     }
 
     [class*='icon-'] {

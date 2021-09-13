@@ -8,12 +8,14 @@ body {
   margin: 0 auto;
 }
 
+.page .row {
+  margin: 15px auto;
+}
 
 .side-bar {
   height: 100vh;
   padding: 0;
 }
-
 
 nav {
   display: block;
@@ -25,10 +27,6 @@ nav {
 
 .topbar {
   display: inline-flex;
-}
-
-.page-wrapper {
-  padding: 0;
 }
 
 @media screen and (min-width:576px) {

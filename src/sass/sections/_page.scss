@@ -3,9 +3,10 @@
 }
 
 .page-wrapper {
+  display: none;
   top: 50px;
   left: 15%;
-  width: 100%;
+  width: 100%; 
 }
 
 .page {
@@ -25,6 +26,9 @@
   }
 }
 
+.active-page {
+  display: block;
+}
 
 @media screen and (max-width: 767px) {
   .page-wrapper {

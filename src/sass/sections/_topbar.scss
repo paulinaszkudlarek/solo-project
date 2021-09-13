@@ -36,6 +36,10 @@
 .topbar-item-wrapper {
   border-left: 1px solid $main-color;
   height: 100%;
+
+  &:hover, &:active {
+    background-color: $main-color;
+  }
 }
 
 .profile span {
@@ -43,7 +47,7 @@
   color: $link-color;
 }
 
-[class*='icon-'] {
+.topbar-wrapper [class*='icon-'] {
   font-size: 19px;
   color: $paragraph-color;
 }
@@ -58,11 +62,13 @@
 @media screen and (max-width:767px) {
   .topbar-wrapper {
     display: none;
+    background: none;
+    border-style: none;
   }
 
   .topbar-active {
     display: flex;
-    top: 319px;
+    top: 330px;
     padding: 0;
     height: auto;
 
@@ -72,14 +78,25 @@
       width: 260px;
       height: fit-content;
 
+      span {
+        margin: 5px;
+      }
+
       .topbar-item-wrapper {
         border-style: none;
-        padding: 0;
+        padding: 2px 0;
+
+        &:hover, &:active {
+          filter: brightness(100%);
+          border-left: 5px solid #fd8b20;
+          background-color: #32414d;
+        }
       }
 
       .profile {
         .icon-profile {
           flex: 1;
+          text-align: center;
         }
 
         span{

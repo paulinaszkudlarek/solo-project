@@ -1,6 +1,11 @@
+.general-page {
+  .button-wrapper {
+    margin: 0 15px;
 
-.page .row {
-  margin: 15px auto;
+    button {      
+      padding: 8px 17px;
+    }
+  }
 }
 
 .general-column-wrapper {

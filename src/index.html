@@ -15,7 +15,7 @@
     <div class="container">
       <div class="row">
         <!-- navigation sidebar -->
-        <div class="col-md-2 sidebar">
+        <aside class="col-md-2 sidebar">
           <nav class="nav">
             <div class="row logo-wrapper">
               <div class="col-9 tittle-nav-link-wrapper">
@@ -59,7 +59,7 @@
                 </a>
               </li>
               <li class="col nav-link-wrapper">
-                <a href="#">
+                <a href="personal-data">
                   <div class="col-3 icon-wrapper">
                     <span class="icon-personaldata"></span>
                   </div>
@@ -84,11 +84,11 @@
               </li>
             </ul>
           </nav>
-        </div>
+        </aside>
         <div class="col-md-10">
           <div class="row">
             <!-- topbar -->
-            <div class="col topbar-wrapper">
+            <section class="col topbar-wrapper">
               <div class="topbar">
                 <div class="col-md-auto topbar-item-wrapper wallet">
                   <a href="#">
@@ -114,12 +114,12 @@
                   </a>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
           <div class="row pages-main-wrapper">
             <!-- general page -->
-            <div class="col page-wrapper">
-              <div class="page">
+            <section class="col page-wrapper active-page">
+              <div class="page general-page">
                 <div class="row">
                   <div class="col page-title-wrapper">
                     <h3>General Statistic</h3>
@@ -132,9 +132,11 @@
                         <input class="col-md-6 form-field" type="date" value="2020-12-12">
                         <input class="col-md-6 form-field" type="date" value="2020-12-12">
                       </div>
-                      <button type="submit">
-                        <span class="icon-refresh"></span>
-                      </button>
+                      <div class="button-wrapper">
+                        <button type="submit">
+                          <span class="icon-refresh"></span>
+                        </button>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -191,9 +193,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
             <!-- links page -->
-            <div class="col page-wrapper">
+            <section class="col page-wrapper active-page">
               <div class="page links-page">
                 <div class="row">
                   <div class="col page-title-wrapper">
@@ -211,12 +213,12 @@
                       <div class="col">
                         <span>Home Page</span>
                       </div>
-                      <div class="col link-html">
+                      <a href="#" class="col link-html">
                         <span>http://www.homepage.com</span>
-                      </div>
+                      </a>
                       <div class="col icons-wrapper">
-                        <span class="icon-links"></span>
-                        <span class="icon-trash"></span>
+                        <a href="#" aria-label="icon" class="icon-links"></a>
+                        <a href="#" aria-label="icon" class="icon-trash"></a>
                       </div>
                     </div>
                   </div>
@@ -225,12 +227,12 @@
                       <div class="col">
                         <span>Currently offer</span>
                       </div>
-                      <div class="col link-html">
+                      <a href="#" class="col link-html">
                         <span>http://www.currently.com</span>
-                      </div>
+                      </a>
                       <div class="col icons-wrapper">
-                        <span class="icon-links"></span>
-                        <span class="icon-trash"></span>
+                        <a href="#" aria-label="icon" class="icon-links"></a>
+                        <a href="#" aria-label="icon" class="icon-trash"></a>
                       </div>
                     </div>
                   </div>
@@ -239,12 +241,12 @@
                       <div class="col">
                         <span>Blurpix</span>
                       </div>
-                      <div class="col link-html">
+                      <a href="#" class="col link-html">
                         <span>http://www.blurpix.com</span>
-                      </div>
+                      </a>
                       <div class="col icons-wrapper">
-                        <span class="icon-links"></span>
-                        <span class="icon-trash"></span>
+                        <a href="#" aria-label="icon" class="icon-links"></a>
+                        <a href="#" aria-label="icon" class="icon-trash"></a>
                       </div>
                     </div>
                   </div>
@@ -253,12 +255,12 @@
                       <div class="col">
                         <span>Your Site</span>
                       </div>
-                      <div class="col link-html">
+                      <a href="#" class="col link-html">
                         <span>http://www.yoursite.com</span>
-                      </div>
+                      </a>
                       <div class="col icons-wrapper">
-                        <span class="icon-links"></span>
-                        <span class="icon-trash"></span>
+                        <a href="#" aria-label="icon" class="icon-links"></a>
+                        <a href="#" aria-label="icon" class="icon-trash"></a>
                       </div>
                     </div>
                   </div>
@@ -267,12 +269,12 @@
                       <div class="col">
                         <span>Google</span>
                       </div>
-                      <div class="col link-html">
+                      <a href="#" class="col link-html">
                         <span>http://www.google.com</span>
-                      </div>
+                      </a>
                       <div class="col icons-wrapper">
-                        <span class="icon-links"></span>
-                        <span class="icon-trash"></span>
+                        <a href="#" aria-label="icon" class="icon-links"></a>
+                        <a href="#" aria-label="icon" class="icon-trash"></a>
                       </div>
                     </div>
                   </div>
@@ -281,12 +283,12 @@
                       <div class="col">
                         <span>Facebook</span>
                       </div>
-                      <div class="col link-html">
+                      <a href="#" class="col link-html">
                         <span>http://www.Facebook.com</span>
-                      </div>
+                      </a>
                       <div class="col icons-wrapper">
-                        <span class="icon-links"></span>
-                        <span class="icon-trash"></span>
+                        <a href="#" aria-label="icon" class="icon-links"></a>
+                        <a href="#" aria-label="icon" class="icon-trash"></a>
                       </div>
                     </div>
                   </div>
@@ -297,7 +299,76 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
+            <!-- personal-data page -->
+            <section class="col page-wrapper active-page">
+              <div class="page personal-data-page">
+                <div class="row">
+                  <div class="col page-title-wrapper">
+                    <h3>Personal data</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col personal-date-form-wrapper">
+                    <form action="#" method="post">
+                      <div class="row form-area">
+                        <div class="col personal-data-form-field">
+                          <label class="col">Name</label>
+                          <input class="col" type="text" name="user-name" placeholder="Leonardo" required>
+                        </div>
+                        <div class="col personal-data-form-field">
+                          <label class="col">Subname</label>
+                          <input class="col" type="text" name="user-surname" placeholder="DiCaprio" required>
+                        </div>
+                        <div class="col personal-data-form-field">
+                          <label class="col">E-mail</label>
+                          <input class="col" type="email" name="email" placeholder="leo@gmail.com" required>
+                        </div>
+                        <div class="col personal-data-form-field">
+                          <label class="col">Phone number</label>
+                          <input class="col" type="tel" name="Phone" placeholder="+48 123 456 789">
+                        </div>
+                      </div>
+                      <div class="row form-area">
+                        <div class="col personal-data-form-field">
+                          <label class="col">Skype</label>
+                          <input class="col" type="text" name="Skype" placeholder="Leonardo.D">
+                        </div>
+                        <div class="col personal-data-form-field">
+                          <label class="col">Msn</label>
+                          <input class="col" type="text" name="msn" placeholder="Leonardo DiCaprio">
+                        </div>
+                        <div class="col personal-data-form-field">
+                          <label class="col">ICQ</label>
+                          <input class="col" type="text" name="icq" placeholder="ICQ">
+                        </div>
+                      </div>
+                      <div class="row form-area">
+                        <div class="col personal-data-form-field">
+                          <label class="col">Wallet</label>
+                          <input class="col" type="text" name="wallet" placeholder="$">
+                        </div>
+                      </div>
+                      <div class="row form-area">
+                        <div class="col personal-data-form-field">
+                          <label class="col">Password</label>
+                          <input class="col" name="password" type="password" required>
+                        </div>
+                        <div class="col personal-data-form-field">
+                          <label class="col">Repeat</label>
+                          <input class="col" name="repeat-password" type="password" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col button-wrapper">
+                          <button type="submit">Save</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>

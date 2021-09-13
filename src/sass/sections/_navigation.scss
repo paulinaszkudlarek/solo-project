@@ -31,7 +31,18 @@
 
 @media screen and (max-width: 767px) {
   .sidebar {
-    height: 50px;
+    height: 61px;
+
+    .logo-wrapper a {
+      display: block;
+    
+      .icon {
+        height: 100%;
+        display: block;
+        margin: 10px;
+        text-align: end;
+      }
+    }
   }
   
   .nav-links-wrapper {
@@ -53,12 +64,12 @@
 
       .icon-wrapper {
         flex: 1;
-        max-width: none;
+        max-width: fit-content;
       }
 
       [class*="icon-"] {
         justify-content: flex-end;
-        margin-right: 10px;
+        margin: 0 6px;
         font-size: 17px;
       }
 
@@ -83,7 +94,7 @@
     font-size: 20px;
   }
 
-  .menu .icon {
+  .logo-wrapper .icon {
     display: none;
   }
 }

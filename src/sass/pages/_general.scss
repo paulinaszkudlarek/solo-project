@@ -41,6 +41,12 @@
 }
 
 @media screen and (max-width:767px) {
+  .general-page {
+    .button-wrapper {
+      margin: 15px 0;
+    }
+  }
+
   .legend-wrapper {
     display: flex;
     justify-content: left;

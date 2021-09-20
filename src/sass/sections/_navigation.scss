@@ -8,20 +8,25 @@
 
   a {
     color: $main-light-color;
-    width: 100%;    
+    display: flex;
+  }
+
+  .logo {
+    font-family: 'Damion', sans-serif;
+    font-size: 30px;
+    max-width: fit-content;
   }
 }
 
-.logo {
-  font-family: 'Damion', sans-serif;
-  font-size: 30px;
-}
+.menu {
+  width: fit-content;
 
-.fa-bars {
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .fa-bars {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .nav-links-wrapper {
@@ -33,9 +38,15 @@
   .sidebar {
     height: 61px;
 
-    .logo-wrapper a {
+    .logo {
       display: block;
+      max-width: fit-content;
     
+      .icon-wrapper {
+        display: flex;
+        justify-content: flex-end;
+      }
+
       .icon {
         height: 100%;
         display: block;

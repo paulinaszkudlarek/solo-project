@@ -78,7 +78,7 @@ const app = {
   //   }   
   // },
 
-  activeModal: function () {
+  initModal: function () {
 
     //function closeModal is written acc to Kodilla's instruction
     
@@ -140,7 +140,7 @@ const app = {
     const thisApp = this;
 
     thisApp.initNav();
-    thisApp.activeModal();
+    thisApp.initModal();
     thisApp.initLogIn();
   },
 };

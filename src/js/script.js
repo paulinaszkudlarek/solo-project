@@ -6,6 +6,8 @@ const select = {
   nav: '.nav',
   topbar: '.topbar-wrapper',
   navLinks: '.nav-link',
+  modalCloseBtn: '.js--close-modal',
+  profile: '.profile',
 };
 
 const classNames = {
@@ -17,6 +19,9 @@ const classNames = {
   },
   topbar: {
     active:'topbar-active',
+  },
+  modal: {
+    show: 'show',
   }
 };
 
@@ -69,20 +74,19 @@ const app = {
 
   //       const linkId = e.target.id; nie mogę namierzyć id klikniętego linku, jeśli kliknę w ikonę lub napis to nie wyłapuje id 
   //       console.log('linkId: ', linkId);
-
   //     });
-  //   }
-    
-    
+  //   }   
   // },
 
   activeModal: function () {
 
+    //function closeModal is written acc to Kodilla's instruction
+    
     function closeModal () {
-      document.getElementById('overlay').classList.remove('show');
+      document.getElementById('overlay').classList.remove(classNames.modal.show);
     }
 
-    const closeByBtn = document.querySelectorAll('.js--close-modal').forEach(function(btn) {
+    const closeByBtn = document.querySelectorAll(select.modalCloseBtn).forEach(function(btn) {
       btn.addEventListener('click', function(e) {
         e.preventDefault();
         closeModal();
@@ -100,17 +104,44 @@ const app = {
         closeModal();
       }
     });
- 
+    
     closeByBtn;
     closeByOverlay;
     closeByEsc;
-  }, 
+  },
+
+  //openModal function is written by myself; in a different way;
+  openModal (modal) {
+    const modals = document.querySelectorAll('#overlay > *');
+
+    for(let item of modals) {
+      item.classList.remove(classNames.modal.show);
+    }
+
+    const openOverlay = document.querySelector('#overlay').classList.add(classNames.modal.show);
+    const showModal = document.querySelector(modal).classList.add(classNames.modal.show);
+    
+    openOverlay;
+    showModal;
+  },
+  
+  initLogIn: function () {
+    const thisApp = this;
+
+    const btnProfile = document.querySelector(select.profile);
+    
+    btnProfile.addEventListener('click', function (event) {
+      event.preventDefault();
+      thisApp.openModal('#loginModal');
+    });
+  },
 
   init: function () {
     const thisApp = this;
 
     thisApp.initNav();
     thisApp.activeModal();
+    thisApp.initLogIn();
   },
 };
 

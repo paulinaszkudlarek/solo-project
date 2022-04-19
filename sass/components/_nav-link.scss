@@ -1,11 +1,12 @@
 .nav-links-wrapper {
   li {
     padding: 0;
+    height: 40px;
   }
 
   .nav-link {
     display: inline-flex;
-    height: 37px;
+    height: 100%;
     width: 100%;
     align-items: center;
     filter: brightness(70%);
@@ -26,10 +27,6 @@
   .nav-links-wrapper {
     font-size: 14px;
     font-weight: 100;
-
-    li {
-      padding: 5px 0;
-    }
 
     [class*='icon-'] {
       font-size: 13px;

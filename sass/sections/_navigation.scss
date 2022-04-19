@@ -41,18 +41,18 @@
     .logo {
       display: block;
       max-width: fit-content;
-    
-      .icon-wrapper {
-        display: flex;
-        justify-content: flex-end;
-      }
+    }
 
-      .icon {
-        height: 100%;
-        display: block;
-        margin: 10px;
-        text-align: end;
-      }
+    .icon-wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .icon {
+      height: 100%;
+      display: block;
+      margin: 10px;
+      text-align: end;
     }
   }
   

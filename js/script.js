@@ -58,25 +58,25 @@ const app = {
     });
   },
 
-  // activePage: function(){
-  //   const thisApp = this;
+  activePage: function(){
+    const thisApp = this;
 
-  //   thisApp.allPages = document.querySelectorAll(select.pages);
-  //   thisApp.navLinks = document.querySelectorAll(select.navLinks);
-  //   thisApp.pagesWrappers = document.querySelectorAll(select.pagesWrappers);
+    thisApp.allPages = document.querySelectorAll(select.pages);
+    thisApp.navLinks = document.querySelectorAll(select.navLinks);
+    thisApp.pagesWrappers = document.querySelectorAll(select.pagesWrappers);
 
-  //   console.log('thisApp.navLinks: ', thisApp.navLinks);
+    console.log('thisApp.navLinks: ', thisApp.navLinks);
 
-  //   for(let link of thisApp.navLinks) {
-  //     link.addEventListener('click', function(e) {
-  //       e.preventDefault();
-  //       console.log('e: ', e);
+    for(let link of thisApp.navLinks) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('e: ', e);
 
-  //       const linkId = e.target.id; nie mogę namierzyć id klikniętego linku, jeśli kliknę w ikonę lub napis to nie wyłapuje id 
-  //       console.log('linkId: ', linkId);
-  //     });
-  //   }   
-  // },
+        const linkId = e.target.id; //nie mogę namierzyć id klikniętego linku, jeśli kliknę w ikonę lub napis to nie wyłapuje id 
+        console.log('linkId: ', linkId);
+      });
+    }   
+  },
 
   initModal: function () {
 
@@ -140,6 +140,7 @@ const app = {
     const thisApp = this;
 
     thisApp.initNav();
+    thisApp.activePage();
     thisApp.initModal();
     thisApp.initLogIn();
   },
